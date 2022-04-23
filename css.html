@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 10px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+      }
+
+      .me > *:nth-child(2) *:nth-child(3) *:nth-child(2) *:nth-child(1) {
+        background-color: #ccc;
+      }
+
+      .sibling {
+      }
+
+      .another {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="me">
+      Me
+
+      <div>child 1</div>
+      <div>
+        child 2
+        <div>grand-child1</div>
+        <div>grand-child2</div>
+        <div>
+          grand-child3
+          <div>
+            lv1
+            <div>
+              lv2
+              <div>lv3</div>
+            </div>
+          </div>
+
+          <div>
+            lv1
+            <div>
+              lv2
+              <div>lv3</div>
+            </div>
+          </div>
+
+          <div>
+            lv1
+            <div>
+              lv2
+              <div>lv3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>child 3</div>
+    </div>
+    <div class="sibling">sibling</div>
+    <div class="another">another</div>
+  </body>
+</html>
